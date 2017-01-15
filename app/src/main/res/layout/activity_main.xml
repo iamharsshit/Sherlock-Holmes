@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:fitsSystemWindows="true"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:layout_collapseMode="pin"/>
+                <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/cover"
+                android:id="@+id/cover"
+                app:layout_collapseMode="parallax"
+                android:fitsSystemWindows="true"
+                />
+            </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:background="#212121">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TV Series  "
+                            android:layout_marginBottom="10dp"
+                            android:textColor="#BDBDBD"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" Crime | Drama | Mystery       "
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="#BDBDBD"
+                                    android:gravity="center"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="1hr 28mins"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="#BDBDBD"
+                                    android:gravity="end"
+                                android:layout_marginRight="10dp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="A modern update finds the famous sleuth and his doctor partner solving crime in 21st century London."
+                                android:layout_marginRight="10dp"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12dp"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp">
+                            <ImageView
+                                android:layout_width="170dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/front_image"
+                                />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="60dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="10dp">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/star1"
+                                        android:background="#212121"
+                                        android:layout_marginBottom="40dp"/>
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/trophy1"
+                                        android:background="#212121" />
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="5dp">
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="9.2"
+                                        android:textSize="22dp"
+                                        android:background="#212121"
+                                        android:layout_marginBottom="5dp"
+                                        android:textColor="#FFF"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text=" / 10"
+                                            android:textSize="15dp"
+                                            android:background="#212121"
+                                            android:layout_marginBottom="5dp"
+                                            android:textColor="#FFF"/>
+                                    </LinearLayout>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="536,771"
+                                        android:background="#212121"
+                                        android:layout_marginBottom="30dp"
+                                        android:textColor="#FFF"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Golden Globe\nNominated\n78 More Wins\n125 Nominations"
+                                        android:background="#212121"
+                                        android:textSize="12dp"
+                                        android:textColor="#FFF"/>
+                                </LinearLayout>
+                                        </LinearLayout>
+                                        <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=" VIEW ALL SEASONS"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginRight="1dp"
+                                        android:textColor="#1A237E"
+                                            android:textSize="17dp"
+                                        android:onClick="OnTextClicked"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1px"
+                                android:background="#c0c0c0"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="10dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Series Details"
+                                android:textSize="20dp"
+                                android:layout_marginBottom="15dp"
+                                android:textColor="#FFF"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Genre"
+                            android:textSize="18dp"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="#FFF"/>
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crime , Drama , Mystery"
+                android:textSize="14dp"
+                android:layout_marginBottom="10dp"
+                    android:textColor="#FFF"/>
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Release Date"
+                android:textSize="18dp"
+                android:layout_marginBottom="3dp"
+                    android:textColor="#FFF"/>
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="25 Jul 2010"
+                android:textSize="14dp"
+                android:layout_marginBottom="10dp"
+                    android:textColor="#FFF"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tagline"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="#FFF"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A new sleuth for the 21st century"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="#FFF"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Top Rated TV Show # 11"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#FFF"/>
+
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1px"
+                                android:background="#c0c0c0"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Series Top-Billed Cast"
+                android:textSize="20dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#FFF"
+                />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="3">
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="180dp"
+                                        android:src="@drawable/benedict"
+                                        android:paddingRight="-40dp"
+                                        android:paddingLeft="-50dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="0dp"
+                                        />
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Benedict\nCumberbatch"
+                                        android:textSize="10dp"
+                                        android:textColor="#FFF"
+                                        android:gravity="center"
+                                        android:layout_marginBottom="15dp"
+                                        />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="180dp"
+                                        android:src="@drawable/martin"
+                                        android:paddingRight="-40dp"
+                                        android:paddingLeft="-50dp"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_marginRight="0dp"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Martin\nFreeman"
+                                        android:textSize="10dp"
+                                        android:gravity="center"
+                                        android:layout_marginLeft="45dp"
+                                        android:textColor="#FFF"
+                                        android:layout_marginBottom="15dp"
+                                        />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="118dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="180dp"
+                                        android:src="@drawable/una"
+                                        android:paddingRight="-10dp"
+                                        android:paddingLeft="-10dp"
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_marginRight="5dp"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Una"
+                                        android:textSize="10dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#FFF"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Stubbs"
+                                        android:textSize="10dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="#FFF"
+                                        android:layout_marginBottom="15dp"
+                                        />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+
+            </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>
